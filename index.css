@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: rgb(23, 4, 58);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planet-container {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  border-radius: 100%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planet {
+  height: 60px;
+  width: 60px;
+  background-color: aqua;
+  border-radius: 100%;
+  animation: planet-orbit 10s linear infinite;
+}
+
+@keyframes planet-orbit {
+  0% {
+    transform: rotate(0deg) translate(400px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(400px) rotate(0deg);
+  }
+}
+
+.earth-container {
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .earth{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 68, 255);
+    border-radius: 100%;
+    animation: earth-orbit 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .moon-container{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moon{
+    height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 100%;
+  animation: moon-orbit 8s linear infinite;
+  }
+  @keyframes moon-orbit {
+    0% {
+      transform: rotate(0deg) translate(60px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(60px) rotate(0deg);
+    }
+}
+  @keyframes earth-orbit {
+    0% {
+      transform: rotate(0deg) translate(300px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(300px) rotate(0deg);
+    }
+}
+
+.mars-container{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mars{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 145, 0);
+    border-radius: 100%;
+    animation: mars-orbit 15s linear infinite;
+}
+@keyframes mars-orbit {
+    0% {
+      transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(200px) rotate(0deg);
+    }
+}
+.sun{
+    border-radius: 100%;
+    background-color: rgba(217,145,37,0.92); 
+    height: 110px;
+    width: 110px; 
+    
+box-shadow: 3px 11px 89px 30px rgba(217,145,37,0.92);
+}
